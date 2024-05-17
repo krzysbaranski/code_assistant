@@ -1,4 +1,4 @@
-
+## AI Code Assistant
 
 # install dependencies
 poetry install
@@ -15,3 +15,13 @@ poetry run python main.py \
     --apikey $OPENAI_API_KEY \
     --ask "How to modify question method so it would support conversation history" \
     --path `pwd`
+
+
+# TODOs:
+- [ ] Add interface for plugins
+- [ ] Add PyCharm plugin integration to https://github.com/krzysbaranski/jetbrains-krzysztof-plugin
+- [ ] Add tests
+- [ ] Add CI/CD
+- [ ] Support alternative LLMs
+- [ ] Add chat history support
+- [ ] Add interactive mode
