@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "code-assistant"
+version = "0.1.0"
+description = ""
+authors = ["Krzysztof Baranski <baranski5@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+langchain = "^0.1.20"
+langchain-openai = "^0.1.6"
+langchain-anthropic = "^0.1.11"
+langchain-chroma = "^0.1.1"
+tiktoken = "^0.7.0"
+gitpython = "^3.1.43"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
