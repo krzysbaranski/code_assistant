@@ -1,23 +1,9 @@
-from typing import List
-
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains.history_aware_retriever import create_history_aware_retriever
 from langchain.chains.retrieval import create_retrieval_chain
-from langchain_anthropic import ChatAnthropic
-from langchain_core.documents import Document
-from langchain_core.prompts import ChatPromptTemplate
-
-import code_assistant
-import sys
-import argparse
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage, BaseMessage, SystemMessage
-from git import Repo
-from langchain_community.document_loaders.generic import GenericLoader
-from langchain_community.document_loaders.parsers import LanguageParser
-from langchain_text_splitters import Language
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 
 from code_assistant.code_processing import load_code
