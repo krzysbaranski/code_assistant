@@ -1,5 +1,7 @@
 ## AI Code Assistant
 
+[![CI](https://github.com/krzysbaranski/code_assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/krzysbaranski/code_assistant/actions/workflows/ci.yml)
+
 # install dependencies
 poetry install
 
@@ -21,7 +23,7 @@ poetry run python main.py \
 - [ ] Add interface for plugins
 - [ ] Add PyCharm plugin integration to https://github.com/krzysbaranski/jetbrains-krzysztof-plugin
 - [ ] Add tests
-- [ ] Add CI/CD
+- [x] Add CI/CD
 - [ ] Support alternative LLMs
 - [ ] Add chat history support
 - [ ] Add interactive mode
