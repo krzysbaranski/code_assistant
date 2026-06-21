@@ -184,14 +184,14 @@ files = [
 
 [[package]]
 name = "anthropic"
-version = "0.71.0"
+version = "0.111.0"
 description = "The official Python library for the anthropic API"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "anthropic-0.71.0-py3-none-any.whl", hash = "sha256:85c5015fcdbdc728390f11b17642a65a4365d03b12b799b18b6cc57e71fdb327"},
-    {file = "anthropic-0.71.0.tar.gz", hash = "sha256:eb8e6fa86d049061b3ef26eb4cbae0174ebbff21affa6de7b3098da857d8de6a"},
+    {file = "anthropic-0.111.0-py3-none-any.whl", hash = "sha256:c14edb36ed80da9099acbd26b5cec810d76606c31f32a0d56a4cf9d4fa9e25ae"},
+    {file = "anthropic-0.111.0.tar.gz", hash = "sha256:39cbda0ac17a6d423e5bf609811bd69b26eddf6299d7a468126e05bc711ce826"},
 ]
 
 [package.dependencies]
@@ -202,12 +202,15 @@ httpx = ">=0.25.0,<1"
 jiter = ">=0.4.0,<1"
 pydantic = ">=1.9.0,<3"
 sniffio = "*"
-typing-extensions = ">=4.10,<5"
+typing-extensions = ">=4.14,<5"
 
 [package.extras]
-aiohttp = ["aiohttp", "httpx-aiohttp (>=0.1.8)"]
+aiohttp = ["aiohttp", "httpx-aiohttp (>=0.1.9)"]
+aws = ["boto3 (>=1.28.57)", "botocore (>=1.31.57)"]
 bedrock = ["boto3 (>=1.28.57)", "botocore (>=1.31.57)"]
+mcp = ["mcp (>=1.0) ; python_version >= \"3.10\""]
 vertex = ["google-auth[requests] (>=2,<3)"]
+webhooks = ["standardwebhooks (>=1.0.1,<2)"]
 
 [[package]]
 name = "anyio"
@@ -1605,19 +1608,19 @@ xai = ["langchain-xai"]
 
 [[package]]
 name = "langchain-anthropic"
-version = "1.0.0"
+version = "1.4.6"
 description = "Integration package connecting Claude (Anthropic) APIs and LangChain"
 optional = false
 python-versions = "<4.0.0,>=3.10.0"
 groups = ["main"]
 files = [
-    {file = "langchain_anthropic-1.0.0-py3-none-any.whl", hash = "sha256:455094c91d5c1d573830d023c964e1f2f8232e9c6c95df20468c8f9dc4ff9a50"},
-    {file = "langchain_anthropic-1.0.0.tar.gz", hash = "sha256:a4f1168d119fb620f9c36e3db5c9fe632d1a0daee026d1c99234820cea714f32"},
+    {file = "langchain_anthropic-1.4.6-py3-none-any.whl", hash = "sha256:dbd412a956b6b8b0716d9d8460ef71f834a6731cdbfc59e6160482a4a9fb5200"},
+    {file = "langchain_anthropic-1.4.6.tar.gz", hash = "sha256:78942d4458d883b7d362438a095ed501ed84f44d402622404482481fc973b9da"},
 ]
 
 [package.dependencies]
-anthropic = ">=0.69.0,<1.0.0"
-langchain-core = ">=1.0.0,<2.0.0"
+anthropic = ">=0.96.0,<1.0.0"
+langchain-core = ">=1.4.6,<2.0.0"
 pydantic = ">=2.7.4,<3.0.0"
 
 [[package]]
@@ -4966,4 +4969,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.13"
-content-hash = "32afa4ceb19b0b84fedc6d753b1fc6aeb5368c1b588ef880820250875e17d0c2"
+content-hash = "dfc9f29e5485bec732d9f01d6b0b9b3da3ea2460eb7f0a5fe57cb2d589a2e893"
